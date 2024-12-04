@@ -1,0 +1,58 @@
+*{
+    margin:0 ;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+body{
+    background-image: url('../img/texture.png');
+}
+
+.container__portada{
+    background-image: url('/Practica10/img/mainBackground.png');
+}
+h1{
+    padding: 1rem;
+}
+
+h1, h3{
+    color: white;
+    text-align: center;
+}
+
+p{
+    margin: 1rem;
+}
+
+p button{
+    margin-bottom: 2rem;
+}
+
+svg{
+    color: white;
+    padding: .1rem;
+}
+
+.container__body{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tarjetas{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+
+}
+
+.card img{
+    width: 100px;
+    margin: 1rem auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
