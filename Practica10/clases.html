@@ -12,18 +12,20 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="d-flex align-items-center ps-3">
-            <img src="./img/Logo IES CAMAS Ampliado.png" alt="">
-            <a class="navbar-brand" href="index.html">IESCamas-Antonio Brisquet</a>
-            <div class="dropdown-center ">
-                <button class="btn btn-secondary dropdown-toggle border-0 s2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Iván Paz
-                </button>
-                <ul class="dropdown-menu s1">
-                  <li class="border-0"><a class="dropdown-item" href="#">Administrar curso</a></li>
-                  <li class="border-0"><a class="dropdown-item" href="#">Editar perfil</a></li>
-                  <li class="border-0"><a class="dropdown-item" href="index.html">Salir</a></li>
-                </ul>
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-center justify-content-md-start align-items-center ps-3 w-100">
+                <img src="./img/Logo IES CAMAS Ampliado.png" alt="">
+                <a class="navbar-brand" href="index.html">IESCamas-Antonio Brisquet</a>
+                <div class="dropdown-center">
+                    <button class="btn btn-secondary dropdown-toggle border-0 s2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Iván Paz
+                    </button>
+                    <ul class="dropdown-menu s1">
+                        <li class="border-0"><a class="dropdown-item" href="#"><i class="bi bi-mortarboard-fill"></i> Administrar curso</a></li>
+                        <li class="border-0"><a class="dropdown-item" href="#"><i class="bi bi-person-fill"></i> Editar perfil</a></li>
+                        <li class="border-0"><a class="dropdown-item" href="index.html"><i class="bi bi-box-arrow-right"></i> Salir</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
@@ -40,34 +42,45 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/7E4CWNMWyR4?si=i2ehlsvhDtu-Guef" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
-        <div class="contenedor__video2 flex-column container-fluid p-3 ">
+        <div class="contenedor__video2 flex-column container-fluid p-3 mb-5">
             
-            <div class="container-fluid d-flex justify-content-start p-1" style="width: 60%;">
+            <div class="container-fluid d-flex justify-content-start p-1 w-75">
                 <h2>Comentarios</h2>
             </div>
-            <textarea placeholder="Escriba aquí su comentario..." class="form-control" rows="3" style="width: 60%;"></textarea>
-            <div class="container-fluid d-flex justify-content-end p-3" style="width: 60%;">
+            <textarea placeholder="Escriba aquí su comentario..." class="form-control w-75" rows="3"></textarea>
+
+            <div class="container-fluid d-flex justify-content-end p-3 w-75 ">
                 <button type="button" class="btn btn-danger">Publicar</button>
             </div>
 
         </div>
         
-        <div class="container-fluid d-flex flex-column " style="width: 60%;">
-            <div class="container-fluid d-flex justify-content-start">
-                <img src="./img/learn-1.png" alt="" >
+        <div class="container-fluid d-flex flex-column contendorComentarios">
+            <div class="container-fluid d-flex justify-content-start align-items-center">
+                <img src="./img/learn-1.png" alt="">
                 <h5>Rafael1234</h5>
                 <p style="color: darkgray;">Hace 2 horas</p>
             </div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod magnam quam rem delectus harum laudantium maxime dignissimos possimus fugiat a! Repudiandae, labore cumque! Aliquid, corrupti explicabo. Nobis ipsum debitis eius!</p>
-            <div class="container-fluid d-flex justify-content-start p-3" style="width: 100%;" data-toggle="collapse" data-target="#texto" aria-expanded="false">
-                <button type="button" class="btn btn-primary">Responder</button>
-            </div>
-            <div class="collapse justify-content-start" id="texto">
-                <div class="" style="width: 100%;">
-                        <input style="width: 100%;" type="text" name="" id=""> 
+            <p class="py-0 my-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod magnam quam rem delectus harum laudantium maxime dignissimos possimus fugiat a! Repudiandae, labore cumque! Aliquid, corrupti explicabo. Nobis ipsum debitis eius!</p>
+             
+            <div class="container-fluid d-flex flex-column justify-content-start p-3" data-toggle="collapse" data-target="#texto" aria-expanded="false">
+                
+                <button type="button" class="btn btn-primary align-self-start">Responder</button>
+                
+                <div class="collapse" id="texto">
+                    <div class="justify-content-end claseRespuesta"> 
+                        <input type="text" name="" id="" class="form-control" placeholder="Escriba su respuesta aquí">
+                    </div>
                 </div>
             </div>
+            <div class="container-fluid d-flex justify-content-start align-items-center w-75">
+                <img src="./img/learn-1.png" alt="">
+                <h5>Antonio1234</h5>
+                <p style="color: darkgray;">Hace 2 horas</p>
+            </div>
+            <p class="py-0 pl-3 mb-3 ml-3 my-0 w-75">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod magnam quam rem delectus harum laudantium maxime dignissimos possimus fugiat a! Repudiandae, labore cumque! Aliquid, corrupti explicabo. Nobis ipsum debitis eius!</p>
         </div>
+        
 
 
     </main>
