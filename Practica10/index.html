@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/cabecera.css">
+  <link rel="stylesheet" href="./css/cuerpo.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <img src="./img/Logo IES CAMAS Ampliado.png" alt="">
+        <a class="navbar-brand" href="#">IESCamas-Antonio Brisquet</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#modalAccede">Accede</a>
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalRegistrate">Registrate</a>
+          </div>
+        </div>
+    </div>
+  </nav>
+
+  <!-- Acceso -->
+  <div class="modal fade" id="modalAccede" tabindex="-1" aria-labelledby="modalAccedeLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="modalAccedeLabel">Acceso al sistema</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <form action="videos.html">
+                      <div class="mb-3">
+                          <label for="emailAccede" class="form-label">Correo Electrónico</label>
+                          <input type="email" class="form-control" id="emailAccede" placeholder="Introduce tu correo">
+                      </div>
+                      <div class="mb-3">
+                          <label for="passwordAccede" class="form-label">Contraseña</label>
+                          <input type="password" class="form-control" id="passwordAccede" placeholder="Introduce tu contraseña">
+                      </div>
+                      <button type="submit" class="btn btn-primary">Acceder</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!--Registro -->
+  <div class="modal fade" id="modalRegistrate" tabindex="-1" aria-labelledby="modalRegistrateLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="modalRegistrateLabel">Regístrate</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <form>
+                      <div class="mb-3">
+                          <label for="nombreRegistrate" class="form-label">Nombre Completo</label>
+                          <input type="text" class="form-control" id="nombreRegistrate" placeholder="Introduce tu nombre">
+                      </div>
+                      <div class="mb-3">
+                          <label for="emailRegistrate" class="form-label">Correo Electrónico</label>
+                          <input type="email" class="form-control" id="emailRegistrate" placeholder="Introduce tu correo">
+                      </div>
+                      <div class="mb-3">
+                          <label for="passwordRegistrate" class="form-label">Contraseña</label>
+                          <input type="password" class="form-control" id="passwordRegistrate" placeholder="Introduce tu contraseña">
+                      </div>
+                      <button type="submit" class="btn btn-primary">Registrarse</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="container__portada p-3">
+        <h1>Aprende Bootstrap y CSS a la vez</h1>
+        <h3>Aprende paso a paso a hacer tus <b>Aplicaciones Web</b> y conviertete en un <b>Experto Diseñador</b></h3>
+
+        <p class="d-flex justify-content-center gap-1">
+          <button type="button" class="btn btn-primary" data-bs-toggle="button">Inscríbete Ahora<svg
+              xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+              <path
+                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+            </svg></button>
+        </p>
+
+  </div>
+  <div class="container__body"> <!--utilizo esto para centrar body -->
+
+        <nav class="navbar bg-body-tertiary">
+          <form class="container-fluid">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Home" aria-label="Username"
+                aria-describedby="basic-addon1">
+            </div>
+          </form>
+        </nav>
+
+        <div class="pregunta">
+          <h2>¿Qué voy a aprender?</h2>
+          <p>
+            A lo largo de este curso, aprenderás a programar una aplicación web increíble desde cero. Específicamente, estás creando una plataforma donde podrás mostrar y ofrecer cursos en línea de manera profesional y atractiva.
+            
+            A través de este aprendizaje, no solo desarrollarás una aplicación funcional, sino que también adquirirás los conocimientos fundamentales para crear proyectos web exitosos en el futuro. ¡Prepárate para dominar las herramientas y técnicas necesarias para llevar tus ideas al siguiente nivel!</p>
+
+
+          <div class="tarjetas">
+
+            <div class="card" style="width: 18rem;">
+              <img src="./img/learn-1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                  content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img src="./img/learn-2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                  content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img src="./img/learn-3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                  content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+  <div class="contenedor__morado">
+    <div class="contenedor__morado--contenido">
+      <img src="/Practica10/img/who.png" alt="">
+          <h3>¿Quién debería tomar este curso?</h3>
+          <h4>Emprendedores</h4>
+          <p>Si eres emprendedor/a sabras que tener presencia en Internet es algo obligatorio. Si ademas tu negocio es de
+            tipo
+
+            online necesitarés desarrollar una Aplicacion Web de calidad para destacar sobre tus competidares. <br>
+
+            El problema viene cuando hablamos de dinero, emprender no suele dar beneficios en sus primeras etapasy
+            contratar a un tercero para que nos desarrolle la aplicacicn suele salr caro
+
+            £n tu dia a dia estds acostumbrado a superar retos de todo tipo y aprender a desarrollar Aplicaciones Web es
+            un
+            eto que vale la pena afrontar y asi ahorrarte miles de euros en tu camino hada el éxito.</p>
+
+          <h4>Empleados</h4>
+          <p>Si estas trabajando para una empresa, aprender a programar Aplicaciones Web es un skill que te permitira
+            optar a
+            una mejor posicién y por tanto a un mejor salario<br>
+
+            Personas que buscan reinventarse
+            Nos encontramos en una situacién en la que muchas personas no consiguen encontrar trabajo sobre aquella en lo
+
+            que se han formado a sélo encuentran empleo de poca calidad
+
+            No es ninguna novedad que aprender a programar aumentara considerablemente tus posibilidades de
+            conseguir trabajo.</p>
+          <h4>Profesionales freelance</h4>
+          <p>Si trabajas por cuenta propia, se cual sea tu especializacién, seguro que aprender a programar Aplicaciones
+            Web te
+            ayudara a ganarte un sobresueldo y te permitiré ofrecer un nuevo tipo de servicio</p>
+          <h4>Desarrolladores</h4>
+          <p>Si ya tienes la suerte de saber programar. Aprender a hacerlo con Bootstrap 3 (HTMLS, CSS3, Javascript,
+            jQuery) y
+            Codelgniter (PHP MySQL, APIs) no es algo que vaya a suponerte mucho tiempo ni esfuerzo, pero te permitira
+            afiadir
+            dos Lenguajes de Programacién a tu curriculum.</p>
+    </div>
+
+          
+  </div>
+
+  <div class="container-fluid flex-column text-center p-3">
+    <!-- Título y imagen -->
+    <div class="caracteriticas--curso mx-auto mb-2">
+        <img class="mx-auto img-fluid rounded-circle" src="./img/bootstrap4.jpg" alt="">
+        <h3 class="p-6">Características del Curso</h3>
+    </div>
+
+    <!-- Módulos -->
+    <div class="modulos row justify-content-center p-3">
+        
+        <div class="modulo__a col-12 col-md-3 mb-4 mb-md-0">
+            <i class="bi bi-camera-video-fill fs-3"></i>
+            <p>Acceso de por vida a más de 30 lecciones.</p>
+        </div>
+        
+        <div class="modulo__b col-12 col-md-3 mb-4 mb-md-0">
+            <i class="bi bi-clock fs-3"></i>
+            <p>Más de 10 horas de contenido.</p>
+        </div>
+        
+        <div class="modulo__c col-12 col-md-3 mb-4 mb-md-0">
+            <i class="bi bi-mortarboard-fill fs-3"></i>
+            <p>Contacto directo con el instructor.</p>
+        </div>
+        
+        <div class="modulo__d col-12 col-md-3">
+            <i class="bi bi-phone-fill fs-3"></i>
+            <p>Contenido accesible desde cualquier dispositivo.</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid d-flex flex-column flex-md-row p-2 mb-2 contenedor__gris">
+    
+  <div class="d-flex flex-column col-12 col-md-4 align-items-center text-center mb-3 mb-md-0">
+      <h2>Tu instructor</h2>
+      <img src="./img/instructor2.png" class="instructor mb-3" alt="instructor" style="max-width: 100%; height: auto;">
+      <p>Pepito Pérez</p>
+      <div class="d-flex justify-content-center">
+          <i class="bi bi-instagram fs-4 p-2"></i>
+          <i class="bi bi-facebook fs-4 p-2"></i>
+          <i class="bi bi-whatsapp fs-4 p-2"></i>
+      </div>
+  </div>
+
+  <div class="col-12 col-md-8">
+      <p>
+          Soy Pepito Pérez, nacido en septiembre de 1980 en la ciudad de Barcelona donde vivo
+          felizmente junto a mi gato Pedra. Soy Ingeniero Técnico en Informática de Sistemas y
+          Master in Computer Vision and Artificial Intelligence, ambas por la Universidad
+          Autónoma de Barcelona.
+          <br><br>
+          Desde 2011 he estado participando en la creación de varios proyectos en Internet,
+          especializándome en primer lugar como Desarrollador Web backend, posteriormente
+          frontend y en la actualidad formándome como Desarrollador ¡OS.
+          Gracias a todo lo aprendido, actualmente combino mi jornada como Desarrollador
+          freelance, como Instructor en Udemy y como Profesor Conferenciante en la UAO.
+          <br><br>
+          En mis ratos libres soy adicto a aprender nuevas cosas, sobretodo temas relacionados con
+          la programación.
+          <br><br>
+          Me encanta todo lo relacionado con Lean Startup, el Consumo Colaborativo, El
+          Padrino (libros y películas), los maquis de salmón y los perros.
+      </p>
+  </div>
+
+</div>
+
+
+<div class="contenedor_video flex-column container-fluid p-3">
+  <h3 class="p-4">Mira el video de presentación</h3>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/7E4CWNMWyR4?si=i2ehlsvhDtu-Guef" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<div class="mensaje p-4 d-flex flex-column flex-md-row align-items-center justify-content-center">
+  <p class="mb-3 mb-md-0 pb-3">Déjate de excusas y <b>lleva tu Aprendizaje a un Nuevo Nivel</b></p>
+  <a href="#" class="btn btn-primary">¡Quiero inscribirme!</a>
+</div>
+
+<footer class="bg-dark text-white text-center p-2">
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <p class="mb-0">Aprende Bootstrap con Nosotros &copy; 2024 <b class="text-warning">Iván Paz</b></p>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
